@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style type="text/css">
+        
+        #loader1 {
+            -webkit-animation:loading1 1.5s 0s infinite cubic-bezier(0.42,0,0.58,1);
+            transform:rotate(270deg) translateY(4px) translateX(4px);
+            stroke-dasharray: 150, 500, 1, 500;
+            stroke-dashoffset:-438;
+            transform-origin:center center;
+            
+        }
+        @-webkit-keyframes loading1 {
+            0% {
+                stroke-dasharray: 0, 500, 1, 500;
+                stroke-dashoffset:0;
+                transform:rotate(-90deg) translateY(4px) translateX(4px);
+            }
+            
+            50% {
+                stroke-dasharray: 150, 500, 1, 500;
+                stroke-dashoffset:-100;
+            }
+            
+            100% {
+                stroke-dasharray: 150, 500, 1, 500;
+                transform:rotate(270deg) translateY(4px) translateX(4px);
+                stroke-dashoffset:-438;
+            }
+            
+        }
+        
+        #loader3 {
+            -webkit-animation:loading3 1.5s 0s infinite cubic-bezier(0.42,0,0.58,1);
+            transform:rotate(270deg);
+            stroke-dasharray: 150, 500, 1, 500;
+            stroke-dashoffset:-438;
+            transform-origin:center center;
+            
+        }
+        @-webkit-keyframes loading3 {
+            0% {
+                stroke-dasharray: 0, 500, 1, 500;
+                stroke-dashoffset:0;
+                transform:rotate(-90deg);
+            }
+            
+            50% {
+                stroke-dasharray: 150, 500, 1, 500;
+                stroke-dashoffset:-100;
+            }
+            
+            100% {
+                stroke-dasharray: 150, 500, 1, 500;
+                transform:rotate(270deg);
+                stroke-dashoffset:-438;
+            }
+            
+        }
+
+        
+    </style>
+    
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-dasharray="440,500,1,500" >
+        <circle id="loader1" class="circle" stroke="rgba(0,0,0,0.25)" stroke-width="10" cx="80" cy="80" r="70"></circle>
+        <!-- <circle id="loader2" class="circle" stroke="rgba(0,0,0,0.25)" stroke-width="10" cx="80" cy="80" r="70"></circle> -->
+        <circle id="loader3" class="circle" stroke="#26227e" stroke-width="10" cx="80" cy="80" r="70"></circle>
+    </g>
+</svg>
+

@@ -1,0 +1,6 @@
+Sitemap: https://www.gsg.wa.edu.au/sitemap.xml
+
+
+User-agent: *
+Disallow: /cpresources/
+

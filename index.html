@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
 	<head>
-		     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTC6EZT770"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', "G-QTC6EZT770");
-    </script>
-     <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', "283122558", 'auto');
-        ga('send', 'pageview');
-    </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,6 +38,46 @@
 
 <link href="css/main.css@v=1708317177951.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .navbar {
+        background-color: blue;
+        color: white;
+    }
+    .ticker {
+        width: 100%;
+        white-space: nowrap; 
+        box-sizing: border-box;
+    }
+    .ticker-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: ticker 10s linear infinite;
+    }
+    @keyframes ticker {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+           /* Adjustments for mobile devices */
+           @media screen and (max-width: 768px) {
+            .ticker {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+            .ticker-text {
+                animation-duration: 5s; /* Adjust animation duration for smaller screens */
+            }
+        }
+</style>
 
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -70,6 +93,16 @@
 		<div id="wrapper">
 			
 			    <div class="navigation is-sticky">
+                    <nav class="navbar quick-navbar" aria-label="quick navigation">
+                        <div class="container">
+                            <div class="navbar-menu">
+                                <div class="ticker">
+                                    <div class="ticker-text">Admission in progress. Enroll Now!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    
     
     <nav class="navbar main-navbar" aria-label="main navigation">
         <div class="container">
